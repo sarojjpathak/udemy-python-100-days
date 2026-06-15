@@ -21,4 +21,5 @@ print("New lines can be created with a \ and the letter n")
 
 #to take input from user
 name = input("what is your name dude ?")
-print("hello " + name + "!")
+print("hello " + name + "!" )
+print(len(name))
