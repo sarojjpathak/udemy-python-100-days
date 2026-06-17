@@ -7,7 +7,8 @@ import random
 com_score = 0
 user_score = 0
 draw = 0
-while True:
+play = True
+while play:
     user_choice = int(input("choose your option 0 for rock 1 for paper and 2 for scessor"))
     computer_choice = random.randint(0,2)
     if(user_choice == 0 ):
@@ -79,4 +80,13 @@ while True:
 
 
           ''')
-       
+    play = False
+    
+          
+
+#you are given a list with multiple people you have to randomly select person from that list
+print("we randomly generate a person who is goint to pay a bill")
+people = ["hari","sita","gita","ramesh"]
+ran_index = random.randint(0,len(people)-1)
+print(f"person who is going to pay a bill is {people[ran_index]}")
+print( random.choice(people))
