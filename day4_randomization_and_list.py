@@ -4,6 +4,16 @@ import random
 print(random.randint(1,99)); #give a random num between 1 and 99 both 1 and 99 are included and this is for integer
 print(random.random())  #this give a result btw  0 to 1
 print(random.uniform(0,9)) #this give random float number btwn this two num
+lst = [1,2,3,45,6,7,8,9,7,5,5,3,6,7,5,4,6,4,7,9,6,4,3]
+
+random.choice(lst)      # 1 random item
+random.choices(lst,k=3) # 3 random items, duplicates allowed
+random.sample(lst,3)    # 3 unique random items
+random.randint(1,10)    # int from 1 to 10
+random.randrange(1,10)  # int from 1 to 9
+random.uniform(1,10)    # float from 1 to 10
+random.random()         # float from 0.0 to 1.0
+random.shuffle(lst)     # shuffle original list
 
 
 #List 
