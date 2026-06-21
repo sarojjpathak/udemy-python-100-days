@@ -7,15 +7,9 @@ arg1 = 23
 arg2 = 45
 #know calling a function
 sum(arg1,arg2)
-
-
-
-
-#i have dont some practices in reeborg to understand the function concept more clearly  here are some code to solve that problem
+#i have done some practices in reeborg to understand the function concept more clearly  here are some code to solve that problem
 # logoReeborg's World
-
-# Hurdle 1 ✓🤖
-
+# Hurdle 1 ✓🤖f
 # def turn_right():
 #     turn_left()
 #     turn_left()
