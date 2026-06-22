@@ -44,6 +44,7 @@ while restart:
         else:
             life -= 1
         if life == 7:
+            print(f"LIFE {'♥ ' * life}{'♡ ' * (7 - life)}")
             print('''
                 +---+
                 |   |
@@ -54,6 +55,7 @@ while restart:
                 =========
                 ''')
         elif life == 6:
+            print(f"LIFE {'♥ ' * life}{'♡ ' * (7 - life)}")
             print('''
                     +---+
                     |   |
@@ -64,6 +66,7 @@ while restart:
                     =========
                     ''')
         elif life == 5:
+            print(f"LIFE {'♥ ' * life}{'♡ ' * (7 - life)}")
             print('''
                     +---+
                     |   |
@@ -74,6 +77,7 @@ while restart:
                     =========
                     ''')
         elif life == 4:
+            print(f"LIFE {'♥ ' * life}{'♡ ' * (7 - life)}")
             print('''
                         +---+
                         |   |
@@ -84,6 +88,7 @@ while restart:
                         =========
                         ''')
         elif life == 3:
+            print(f"LIFE {'♥ ' * life}{'♡ ' * (7 - life)}")
             print('''
                     +---+
                     |   |
@@ -94,6 +99,7 @@ while restart:
                     =========
                     ''')
         elif life == 2:
+            print(f"LIFE {'♥ ' * life}{'♡ ' * (7 - life)}")
             print('''
                     +---+
                     |   |
@@ -104,6 +110,7 @@ while restart:
                     =========
                     ''')
         elif life == 1:
+            print(f"LIFE {'♥ ' * life}{'♡ ' * (7 - life)}")
             print('''
                     +---+
                     |   |
@@ -114,6 +121,7 @@ while restart:
                     =========
                     ''')
         elif life == 0:
+            print(f"LIFE {'♥ ' * life}{'♡ ' * (7 - life)}")
             print('''
                     +---+
                     |   |
@@ -126,10 +134,13 @@ while restart:
                             
         word = ''.join(show_list)
         print(word)
-       
-    print("GAME OVER")
-    give_answer = input("do you want to know the answer ? (y/n)")
-    print("word is " + selected) if give_answer == 'y' else print("ok thats totally fine boss")
+    if life == 0: 
+        print("GAME OVER  you have wasted all of your life")
+        give_answer = input("do you want to know the answer ? (y/n)")
+        print("word is " + selected) if give_answer == 'y' else print("ok thats totally fine boss")
+    elif show_list == list(selected):
+        print(f"You win !")
+    
     again = input("Do you want to guess another word : (y/n)")
     if again == "y":
         restart = True
