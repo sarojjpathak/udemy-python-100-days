@@ -1,6 +1,5 @@
 import random
 
-    
 
 word_list = [
     "elephant", "giraffe", "penguin", "dolphin", "hamster",
@@ -31,7 +30,9 @@ while restart:
     show = ""
     for i in range(len(selected)):
         show += "_"
-    print(show)
+    word = ' '.join(show)
+    print(word)
+    
     choose = ""
     show_list = list(show)
     while show_list != list(selected) and life > 0:
@@ -123,10 +124,12 @@ while restart:
                     =========
                     ''')
                             
-        
-        print(show_list)
+        word = ''.join(show_list)
+        print(word)
        
-    print("you had 5 chance but you waste all of them you are noob")
+    print("GAME OVER")
+    give_answer = input("do you want to know the answer ? (y/n)")
+    print("word is " + selected) if give_answer == 'y' else print("ok thats totally fine boss")
     again = input("Do you want to guess another word : (y/n)")
     if again == "y":
         restart = True
