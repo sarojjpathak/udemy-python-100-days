@@ -144,5 +144,6 @@ while restart:
     again = input("Do you want to guess another word : (y/n)")
     if again == "y":
         restart = True
-    elif again == "n":
-        restart == False
+    else:
+        restart = False
+print("I HOPE YOU ENJOYED THIS GAME")
