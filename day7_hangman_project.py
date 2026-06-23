@@ -1,6 +1,5 @@
 import random
 
-
 word_list = [
     "elephant", "giraffe", "penguin", "dolphin", "hamster",
     "parrot", "rabbit", "turtle", "monkey", "zebra",
