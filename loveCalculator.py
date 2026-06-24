@@ -40,3 +40,16 @@ def calculate_love_score(boy_name,girl_name):
 calculate_love_score("true","lover")
 calculate_love_score("Kanye West", "Kim Kardashian")
 
+
+#more shorter form
+# def calculate_love_score(boy_name, girl_name):
+#     names = (boy_name + girl_name).lower()
+
+#     true_score = sum(names.count(ch) for ch in "true")
+#     love_score = sum(names.count(ch) for ch in "love")
+
+#     print(f"YOUR LOVE SCORE IS {true_score}{love_score}")
+
+
+# calculate_love_score("Kanye West", "Kim Kardashian")
+
