@@ -31,24 +31,12 @@ def calculate_love_score(boy_name,girl_name):
  for i in range(0,2):
     
     for letter in name_list[i]:
-        print(letter)
-        if letter == letter_to_check[0][0]:
-            count_true += 1
-        elif letter == letter_to_check[0][1]:
-         count_true += 1
-        elif letter == letter_to_check[0][2]:
-         count_true += 1
-        elif letter == letter_to_check[0][3]:
-         count_true += 1
+        
+        if letter in "true":
+          count_true += 1
 
-        if letter == letter_to_check[1][0]:
-            count_love += 1
-        elif letter == letter_to_check[1][1]:
-         count_love += 1
-        elif letter == letter_to_check[1][2]:
-         count_love += 1
-        elif letter == letter_to_check[1][3]:
-         count_love += 1
+        if letter in "love":
+           count_love += 1
         
  print(f" YOUR LOVE SCORE IS {count_true*10+count_love}")
 calculate_love_score("true","lover")
