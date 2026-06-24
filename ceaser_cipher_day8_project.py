@@ -4,7 +4,10 @@ encoded = ""
 decoded = ""
 shiftKey = int(input("enter a shift key  :"))
 for ch in plainText:
-   encoded += alphabet[(alphabet.index(ch)+shiftKey)%26]
+   if ch == " ":
+        encoded += " "
+   else:
+      encoded += alphabet[(alphabet.index(ch)+shiftKey)%26]
 print(f"ENcoded message :{encoded}")
 dec = input("Do you want to decode ?(y/n)")
 if dec == "y":
@@ -12,7 +15,10 @@ if dec == "y":
      
 
       for ch in encoded:
-            decoded += alphabet[(alphabet.index(ch)-key)%26]
-            
+            if ch == " ":
+                 decoded += " "
+            else:
+                  decoded += alphabet[(alphabet.index(ch)-key)%26]
+
       
 print(f"Decoded message :{decoded}")    
