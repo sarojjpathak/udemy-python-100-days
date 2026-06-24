@@ -26,17 +26,15 @@
 def calculate_love_score(boy_name,girl_name):
  count_true = 0
  count_love = 0
- name_list = [boy_name,girl_name]
- letter_to_check = [["t","r","u","e"],["l","o","v","e"]]
- for i in range(0,2):
-    
-    for letter in name_list[i]:
-        
-        if letter in "true":
-          count_true += 1
+ name_list = boy_name+girl_name.lower()
+ letter_to_check = ["true","love"]
 
-        if letter in "love":
-           count_love += 1
+        
+        
+ count_true = name_list.count("t")+name_list.count("r")+name_list.count("u")+name_list.count("e")
+
+
+ count_love = name_list.count("l")+name_list.count("o")+name_list.count("v")+name_list.count("e")
         
  print(f" YOUR LOVE SCORE IS {count_true*10+count_love}")
 calculate_love_score("true","lover")
