@@ -23,3 +23,12 @@ def is_leap_year(year):
     # Don't change the function name.
 print(f" 2100 is a leap year : {is_leap_year(2100)}")
 print(f" 2000 is a leap year : {is_leap_year(2000)}")
+
+
+def greet(time=1):
+    if time < 12:
+        print("good morning")
+    else:
+        print("good afternoon")
+greet(13)
+greet()
