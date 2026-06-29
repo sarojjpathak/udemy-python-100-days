@@ -54,3 +54,33 @@ print("School after student entry:", school_name)
 change_school()
 
 print("Final School Name:", school_name)
+
+
+#library mgmt system
+library_name = "City Library"
+
+def show_library():
+    print("Library:", library_name)
+
+def borrow_book():
+    book = input("Enter book name: ")
+    member = input("Enter member name: ")
+    print(member, "borrowed", book)
+
+def change_library():
+    global library_name
+    library_name = input("Enter new library name: ")
+    print("Library name updated to:", library_name)
+
+print("Welcome to the Library System")
+print("Current Library:", library_name)
+
+show_library()
+
+borrow_book()
+
+print("Library Name:", library_name)
+
+change_library()
+
+print("Final Library Name:", library_name)
