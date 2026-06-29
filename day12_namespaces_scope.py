@@ -24,3 +24,33 @@ print("After local_scope():", message)  # Global variable remains unchanged
 
 change_global()    # Modifies global variable using 'global'
 print("After change_global():", message)
+
+
+#trying to build simple project
+school_name = "ABC School"
+
+def show_school():
+    print("School:", school_name)
+
+def student_details():
+    student = input("Enter student name: ")
+    grade = input("Enter grade: ")
+    print("Student:", student)
+    print("Grade:", grade)
+
+def change_school():
+    global school_name
+    school_name = input("Enter new school name: ")
+    print("School updated to:", school_name)
+
+print("Welcome to Student Record System")
+print("Current School:", school_name)
+
+show_school()
+student_details()
+
+print("School after student entry:", school_name)
+
+change_school()
+
+print("Final School Name:", school_name)
