@@ -1,4 +1,19 @@
 import random
+HARD_LEVEL = 5
+EASY_LEVEL = 10
+
+def set_difficulties():
+    level = input("Choose a difficulty Level (hard/easy)")
+    if level == "hard":
+        return HARD_LEVEL
+    else:
+        return EASY_LEVEL
+    
+
+
+
+
+
 print(''' 
 ___________                        _________                      __  .__    .__                 
 \__    ___/__.__.______   ____    /   _____/ ____   _____   _____/  |_|  |__ |__| ____    ____   
@@ -12,10 +27,7 @@ ___________                        _________                      __  .__    .__
 print("_______WELCOME TO NUMBER GUESSING GAME_________")
 
 level = input("Choose a difficulty Level (hard/easy)")
-if level == "hard":
-    attempt = 5
-else:
-    attempt = 10
+attempt = set_difficulties()
 number_to_guess = random.randint(1,100)
 print(number_to_guess)
 while attempt != 0:
